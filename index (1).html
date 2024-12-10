@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Request Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe4e1;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            color: #d63384;
+        }
+        .header-images {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header-images img {
+            width: 100px;
+            height: auto;
+            border-radius: 50%;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #d63384;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #b0276a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-images">
+            <img src="https://i.pinimg.com/736x/06/98/9b/06989b9df22c1d760e68ead7df88c86c.jpg" alt="Logo Example 1">
+            <h1>Anfal Tif</h1>
+            <img src="https://i.pinimg.com/736x/06/98/9b/06989b9df22c1d760e68ead7df88c86c.jpg" alt="Logo Example 2">
+        </div>
+        <form action="https://formspree.io/f/mnnqyzkg" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+
+            <label for="contact">Contact Info (Instagram, Facebook, Gmail, or WhatsApp):</label>
+            <input type="text" id="contact" name="contact" placeholder="Enter your contact info">
+
+            <label for="company">Company Name:</label>
+            <input type="text" id="company" name="company" placeholder="Enter the company name">
+
+            <label for="type">Type of Work:</label>
+            <select id="type" name="type">
+                <option value="service">Service</option>
+                <option value="physical_product">Physical Product</option>
+                <option value="app">Application</option>
+                <option value="company">Company</option>
+            </select>
+
+            <label for="industry">Industry:</label>
+            <input type="text" id="industry" name="industry" placeholder="Enter the industry (e.g., Tech, Fashion, etc.)">
+
+            <label for="target">Target Audience:</label>
+            <textarea id="target" name="target" placeholder="Describe your target audience"></textarea>
+
+            <label for="keywords">Keywords Describing Your Work:</label>
+            <textarea id="keywords" name="keywords" placeholder="Modern, Innovative, Natural, etc."></textarea>
+
+            <!-- تعديل الحقل لطلب الرابط بدلاً من رفع الصور -->
+            <label for="examples">Do You Have Logo Examples You Like? (Enter links to images):</label>
+            <input type="text" id="examples" name="examples" placeholder="Enter the links to your logo examples">
+
+            <label for="colors">Preferred Colors:</label>
+            <input type="text" id="colors" name="colors" placeholder="Enter preferred colors">
+
+            <label for="avoid_colors">Colors to Avoid:</label>
+            <input type="text" id="avoid_colors" name="avoid_colors" placeholder="Enter colors to avoid">
+
+            <label for="shapes">Preferred Shapes or Fonts:</label>
+            <textarea id="shapes" name="shapes" placeholder="Enter shapes or fonts you like"></textarea>
+
+            <label for="avoid_shapes">Shapes to Avoid:</label>
+            <textarea id="avoid_shapes" name="avoid_shapes" placeholder="Enter shapes or fonts to avoid"></textarea>
+
+            <label for="message">Message You Want the Logo to Convey:</label>
+            <textarea id="message" name="message" placeholder="Quality, Trust, Innovation, etc."></textarea>
+
+            <label for="impression">Impression You Want to Leave:</label>
+            <textarea id="impression" name="impression" placeholder="Enter the impression (e.g., modern, classic, etc.)"></textarea>
+
+            <label for="usage">Where Will the Logo Be Used?:</label>
+            <textarea id="usage" name="usage" placeholder="Website, Business Cards, etc."></textarea>
+
+            <label for="deadline">Deadline:</label>
+            <input type="date" id="deadline" name="deadline">
+
+            <label for="file_types">Preferred File Types:</label>
+            <input type="text" id="file_types" name="file_types" placeholder="PNG, JPEG, etc.">
+
+            <label for="ideas">Do You Have Any Ideas or Inspirations? (Enter links to images):</label>
+            <input type="text" id="ideas" name="ideas" placeholder="Enter the links to your ideas">
+
+            <label for="final_price">Final Price:</label>
+            <input type="number" id="final_price" name="final_price" placeholder="Enter final price" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
